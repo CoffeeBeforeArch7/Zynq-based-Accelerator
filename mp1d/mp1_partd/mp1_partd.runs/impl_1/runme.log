@@ -1,0 +1,1776 @@
+
+*** Running vivado
+    with args -log system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Sat Sep 13 14:17:01 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source system_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 499.156 ; gain = 211.641
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/nabil/AppData/Roaming/Xilinx/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.1/Vivado/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 609.512 ; gain = 105.406
+Command: link_design -top system_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0.dcp' for cell 'system_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_smc_0/system_axi_smc_0.dcp' for cell 'system_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/system_caesar_cipher_accele_0_0.dcp' for cell 'system_i/caesar_cipher_accele_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.dcp' for cell 'system_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_xbar_0/system_axi_mem_intercon_imp_xbar_0.dcp' for cell 'system_i/axi_mem_intercon/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_pc_3/system_axi_mem_intercon_imp_auto_pc_3.dcp' for cell 'system_i/axi_mem_intercon/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_3/system_axi_mem_intercon_imp_auto_us_3.dcp' for cell 'system_i/axi_mem_intercon/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_pc_4/system_axi_mem_intercon_imp_auto_pc_4.dcp' for cell 'system_i/axi_mem_intercon/s01_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_4/system_axi_mem_intercon_imp_auto_us_4.dcp' for cell 'system_i/axi_mem_intercon/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_pc_5/system_axi_mem_intercon_imp_auto_pc_5.dcp' for cell 'system_i/axi_mem_intercon/s02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_5/system_axi_mem_intercon_imp_auto_us_5.dcp' for cell 'system_i/axi_mem_intercon/s02_couplers/auto_us'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 897.340 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 470 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0.xdc] for cell 'system_i/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0.xdc:55]
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0.xdc] for cell 'system_i/axi_dma_0/U0'
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/bd_44e3_psr_aclk_0_board.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/bd_44e3_psr_aclk_0_board.xdc] for cell 'system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_smc_0/smartconnect.xdc] for cell 'system_i/axi_smc/inst'
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_smc_0/smartconnect.xdc] for cell 'system_i/axi_smc/inst'
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_dma_0_0/system_axi_dma_0_0.xdc] for cell 'system_i/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_dma_0_0/system_axi_dma_0_0.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_dma_0_0/system_axi_dma_0_0.xdc:55]
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_dma_0_0/system_axi_dma_0_0.xdc] for cell 'system_i/axi_dma_0/U0'
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+WARNING: [Constraints 18-619] A clock with name 'clk_fpga_0' already exists, overwriting the previous clock with the same name. [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_processing_system7_0_0/system_processing_system7_0_0.xdc:20]
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/smartconnect.xdc] for cell 'system_i/caesar_cipher_accele_0/inst'
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/smartconnect.xdc] for cell 'system_i/caesar_cipher_accele_0/inst'
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0_clocks.xdc] for cell 'system_i/axi_dma_0/U0'
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0_clocks.xdc] for cell 'system_i/axi_dma_0/U0'
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_3/system_axi_mem_intercon_imp_auto_us_3_clocks.xdc] for cell 'system_i/axi_mem_intercon/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_3/system_axi_mem_intercon_imp_auto_us_3_clocks.xdc] for cell 'system_i/axi_mem_intercon/s00_couplers/auto_us/inst'
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_4/system_axi_mem_intercon_imp_auto_us_4_clocks.xdc] for cell 'system_i/axi_mem_intercon/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_4/system_axi_mem_intercon_imp_auto_us_4_clocks.xdc] for cell 'system_i/axi_mem_intercon/s01_couplers/auto_us/inst'
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_5/system_axi_mem_intercon_imp_auto_us_5_clocks.xdc] for cell 'system_i/axi_mem_intercon/s02_couplers/auto_us/inst'
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_axi_mem_intercon_imp_auto_us_5/system_axi_mem_intercon_imp_auto_us_5_clocks.xdc] for cell 'system_i/axi_mem_intercon/s02_couplers/auto_us/inst'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'system_axi_mem_intercon_imp_auto_us_0'. The XDC file c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_mem_intercon_imp_auto_us_0/system_axi_mem_intercon_imp_auto_us_0_clocks.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'system_axi_mem_intercon_imp_auto_us_1'. The XDC file c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_mem_intercon_imp_auto_us_1/system_axi_mem_intercon_imp_auto_us_1_clocks.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'system_axi_mem_intercon_imp_auto_us_2'. The XDC file c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_mem_intercon_imp_auto_us_2/system_axi_mem_intercon_imp_auto_us_2_clocks.xdc will not be read for any cell of this module.
+Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_dma_0_0/system_axi_dma_0_0_clocks.xdc] for cell 'system_i/axi_dma_0/U0'
+Finished Parsing XDC File [c:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_dma_0_0/system_axi_dma_0_0_clocks.xdc] for cell 'system_i/axi_dma_0/U0'
+INFO: [Project 1-1714] 83 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1643.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 26 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 22 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+23 Infos, 6 Warnings, 3 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 1643.648 ; gain = 1034.137
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1643.648 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 124f3bdbb
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1643.648 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 124f3bdbb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2055.531 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 124f3bdbb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2055.531 ; gain = 0.000
+Phase 1 Initialization | Checksum: 124f3bdbb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 2055.531 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 124f3bdbb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.444 . Memory (MB): peak = 2055.531 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 124f3bdbb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.516 . Memory (MB): peak = 2055.531 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 124f3bdbb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.525 . Memory (MB): peak = 2055.531 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 9 inverters resulting in an inversion of 65 pins
+INFO: [Opt 31-138] Pushed 9 inverter(s) to 29 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1cd5ea886
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.980 . Memory (MB): peak = 2055.531 ; gain = 0.000
+Retarget | Checksum: 1cd5ea886
+INFO: [Opt 31-389] Phase Retarget created 79 cells and removed 226 cells
+INFO: [Opt 31-1021] In phase Retarget, 134 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 14 inverter(s) to 29 load pin(s).
+Phase 4 Constant propagation | Checksum: 1b073dcb5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2055.531 ; gain = 0.000
+Constant propagation | Checksum: 1b073dcb5
+INFO: [Opt 31-389] Phase Constant propagation created 475 cells and removed 1533 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 134 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2055.531 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2055.531 ; gain = 0.000
+Phase 5 Sweep | Checksum: 16a40b524
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2055.531 ; gain = 0.000
+Sweep | Checksum: 16a40b524
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 734 cells
+INFO: [Opt 31-1021] In phase Sweep, 293 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 16a40b524
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2055.531 ; gain = 0.000
+BUFG optimization | Checksum: 16a40b524
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 16a40b524
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2055.531 ; gain = 0.000
+Shift Register Optimization | Checksum: 16a40b524
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+INFO: [Opt 31-1566] Pulled 2 inverters resulting in an inversion of 4 pins
+Phase 8 Post Processing Netlist | Checksum: 192db780e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2055.531 ; gain = 0.000
+Post Processing Netlist | Checksum: 192db780e
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 2 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 161 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 21b727203
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2055.531 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2055.531 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 21b727203
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2055.531 ; gain = 0.000
+Phase 9 Finalization | Checksum: 21b727203
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2055.531 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              79  |             226  |                                            134  |
+|  Constant propagation         |             475  |            1533  |                                            134  |
+|  Sweep                        |               0  |             734  |                                            293  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               2  |                                            161  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 21b727203
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2055.531 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 4 newly gated: 0 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: fb6a3172
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.104 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Ending Power Optimization Task | Checksum: fb6a3172
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2211.996 ; gain = 156.465
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: fb6a3172
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: f3bcc6f4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2211.996 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+55 Infos, 6 Warnings, 3 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 2211.996 ; gain = 568.348
+INFO: [Vivado 12-24828] Executing command : report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
+Command: report_drc -file system_wrapper_drc_opted.rpt -pb system_wrapper_drc_opted.pb -rpx system_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/nabil/mp1_partd/mp1_partd.runs/impl_1/system_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 2211.996 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/nabil/mp1_partd/mp1_partd.runs/impl_1/system_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 8 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: c899362e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 817b7d9b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 15657a417
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 15657a417
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 15657a417
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 14650a73e
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1d74a0449
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1d74a0449
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 200c8be87
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 2b032de56
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 91 LUTNM shape to break, 491 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 7, two critical 84, total 91, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 279 nets or LUTs. Breaked 91 LUTs, combined 188 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           91  |            188  |                   279  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           91  |            188  |                   279  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 1ae9f0471
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 155667f61
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 155667f61
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 179798496
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 150d9917d
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: fcc7347c
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1d581be1b
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1c82c685e
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 17ca860d8
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 153c94a83
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 14fc28f3f
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 15e5d954f
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 15e5d954f
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1b1823a5d
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.358 | TNS=-441.288 |
+Phase 1 Physical Synthesis Initialization | Checksum: 12d434bf7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.191 . Memory (MB): peak = 2211.996 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: e4d06233
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.282 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1b1823a5d
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:32 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-12.617. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 11bd35006
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:46 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:46 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 11bd35006
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:46 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 11bd35006
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:46 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                2x2|                8x8|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                2x2|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 11bd35006
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:46 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 11bd35006
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:46 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:47 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 13bfcc86e
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:47 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Ending Placer Task | Checksum: d90c1c3f
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:47 . Memory (MB): peak = 2211.996 ; gain = 0.000
+98 Infos, 6 Warnings, 3 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:59 ; elapsed = 00:00:48 . Memory (MB): peak = 2211.996 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file system_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 2211.996 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file system_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2211.996 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file system_wrapper_utilization_placed.rpt -pb system_wrapper_utilization_placed.pb
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.086 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.934 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2211.996 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/nabil/mp1_partd/mp1_partd.runs/impl_1/system_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2211.996 ; gain = 0.000
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 2.00s |  WALL: 1.35s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.617 | TNS=-414.882 |
+Phase 1 Physical Synthesis Initialization | Checksum: 9e6bce60
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.864 . Memory (MB): peak = 2211.996 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.617 | TNS=-414.882 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 9e6bce60
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.906 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.617 | TNS=-414.882 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_4_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_4_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_15_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.613 | TNS=-414.419 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_2_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_2_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.599 | TNS=-414.045 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[7]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.566 | TNS=-413.941 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_5_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_5_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_17_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.535 | TNS=-413.581 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[5]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[5]_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[5]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.532 | TNS=-413.059 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[22]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[22]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[22]_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.511 | TNS=-413.003 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[31]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_2_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.494 | TNS=-412.819 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[14]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[14]_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.479 | TNS=-412.746 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[30]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[30]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[30]_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.461 | TNS=-412.724 |
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_2_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_2
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.460 | TNS=-412.632 |
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_2_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_2
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.457 | TNS=-412.624 |
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_comp_1
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.456 | TNS=-412.482 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[13]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[13]_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[13]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.452 | TNS=-412.316 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_2_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_2_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.429 | TNS=-412.286 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.424 | TNS=-412.281 |
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[23]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.422 | TNS=-412.235 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_n_0_repN. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_comp_2.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.422 | TNS=-412.212 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[15]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.407 | TNS=-412.152 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_3_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.383 | TNS=-412.046 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_3_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_3_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.378 | TNS=-411.889 |
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_comp_1
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.369 | TNS=-411.611 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_3_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_3_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.362 | TNS=-409.978 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_5_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_5_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_17_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.349 | TNS=-409.914 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[21]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[21]_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[21]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.335 | TNS=-409.756 |
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[6]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[6]_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.315 | TNS=-409.684 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.315 | TNS=-409.531 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.310 | TNS=-409.526 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_comp_2.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.301 | TNS=-409.476 |
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[14]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[14]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_3_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.298 | TNS=-409.370 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_4_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_4_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_15_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.295 | TNS=-409.340 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_2_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_2_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.290 | TNS=-409.303 |
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[13]_i_2_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[13]_i_2_comp
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[13]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.288 | TNS=-409.073 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[29]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[29]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[29]_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[29]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.271 | TNS=-409.016 |
+INFO: [Physopt 32-134] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_43_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_77_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_77
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_77_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.266 | TNS=-408.976 |
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_75_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_75
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_75_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.263 | TNS=-408.768 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_3_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_3_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.253 | TNS=-408.690 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[4]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[28]_i_3_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[28]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.243 | TNS=-408.575 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[6]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_3_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.240 | TNS=-408.552 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[15]_i_101_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[15]_i_105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[15]_i_104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[15]_i_106_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[15]_i_103_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[15]_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_72_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_72_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_72_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[12]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.229 | TNS=-408.376 |
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_3_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_3_comp_1.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_43_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.220 | TNS=-408.314 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[0]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_3_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.219 | TNS=-407.885 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_4_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_4_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.218 | TNS=-407.875 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_43_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_43_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.209 | TNS=-407.699 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_7_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_7_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_21_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.199 | TNS=-407.604 |
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[21]_i_2_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[21]_i_2_comp
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[21]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.196 | TNS=-407.411 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_22_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_22
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_22_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.187 | TNS=-407.299 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[2]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_2_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.185 | TNS=-406.956 |
+INFO: [Physopt 32-134] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_43_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_74_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.182 | TNS=-406.700 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_140_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_140_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_140_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[12]_i_9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.181 | TNS=-406.692 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_70_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[12]_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[12]_i_12_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_65_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_86_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_66_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_67_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_102_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_98_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_146_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_146
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_146_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.171 | TNS=-406.564 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[28]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[28]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[28]_i_1_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[28]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.169 | TNS=-406.159 |
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0_repN.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_comp
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.165 | TNS=-406.028 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_95_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_95_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_95_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_139_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.163 | TNS=-406.012 |
+INFO: [Physopt 32-134] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_146_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_146_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_140_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_207_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_300_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_297_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_292_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_367_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_422_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_225_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_270_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_270_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.153 | TNS=-405.876 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_101_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_106_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_103_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_73_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 17 pins.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.146 | TNS=-405.748 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_380_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_154_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_154_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_154_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_260_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.137 | TNS=-405.500 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[4]_i_12_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_65_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_86_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_66_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_67_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_95_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_95_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_95_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_139_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.129 | TNS=-404.956 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_2_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_2_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_2_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.126 | TNS=-404.877 |
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[29]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[29]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[29]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.122 | TNS=-404.758 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_2_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_2_comp_2.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.115 | TNS=-404.345 |
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_270_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_270
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_270_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.114 | TNS=-404.321 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_5_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_5_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_17_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.112 | TNS=-404.247 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_419_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.096 | TNS=-403.535 |
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_n_0_repN. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.069 | TNS=-403.452 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_101_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_97_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_97_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_97_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_145_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.067 | TNS=-403.332 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[1].  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_4
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.054 | TNS=-402.954 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_100_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_100_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_100_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_96_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.039 | TNS=-402.402 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_3_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_3_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.038 | TNS=-401.816 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[7]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_5_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.023 | TNS=-401.790 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_378_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.021 | TNS=-401.646 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_4_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_4_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.017 | TNS=-401.590 |
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_comp_3.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_17_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.017 | TNS=-401.611 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_75_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.008 | TNS=-400.411 |
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_5_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_5_comp_1.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_43_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.005 | TNS=-400.393 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_92_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_88_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_122_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_122
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_122_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.985 | TNS=-400.049 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_96_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_96_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_96_comp_2.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_141_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.978 | TNS=-399.993 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_96_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_140_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_216_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_296_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_297_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_398_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_193_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_193_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_193_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_262_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.976 | TNS=-398.945 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_4_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_4_comp_1.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_15_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.972 | TNS=-398.126 |
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_2_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_2_comp_1.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_21_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.963 | TNS=-398.011 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[21]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[21]_i_3_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[21]_i_3_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[21]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.962 | TNS=-397.710 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_410_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_440_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 18 pins.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_303_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.962 | TNS=-397.462 |
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_3_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_3_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_43_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.938 | TNS=-397.438 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_10_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_10_comp_1.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_43_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.931 | TNS=-397.433 |
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_88_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_88_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_122_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.919 | TNS=-397.337 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_421_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_224_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.918 | TNS=-397.329 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_303_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_322_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_322
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_322_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.912 | TNS=-397.273 |
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_76_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_76
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_76_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.911 | TNS=-397.442 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_419_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_419_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_419_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_263_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.895 | TNS=-397.298 |
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_4_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_4_comp_1.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_43_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.893 | TNS=-397.173 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_222_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_222_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_222_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_272_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.892 | TNS=-397.165 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_93_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_89_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_89_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_89_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_123_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.883 | TNS=-397.093 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_430_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_371_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_371
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_371_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.882 | TNS=-397.037 |
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_2_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_2_comp_1.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.876 | TNS=-396.928 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_438_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_301_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_301_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_301_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_271_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.876 | TNS=-396.928 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_267_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[12]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[12]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[15]_i_20_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_38_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.867 | TNS=-395.760 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_75_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[31]_i_102_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[31]_i_106_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[31]_i_105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[31]_i_107_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[31]_i_104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[31]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_74_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.847 | TNS=-395.400 |
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_388_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_388_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_388_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_251_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.840 | TNS=-395.120 |
+INFO: [Common 17-14] Message 'Physopt 32-619' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_74_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_74
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_74_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_73_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_73_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_73_comp.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[28]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-81] Processed net system_i/caesar_cipher_accele_0/inst/data4__0[4]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net system_i/caesar_cipher_accele_0/inst/data4__0[4]. Optimization improves timing on the net.
+INFO: [Common 17-14] Message 'Physopt 32-735' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[23]_i_101_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[23]_i_105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[23]_i_104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[23]_i_106_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[23]_i_103_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[23]_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_67_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_94_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_135_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_131_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_131_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_131_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_74_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_74_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_292_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_74_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_74_comp_1.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_395_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_394_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_394_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_394_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_397_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_192_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_192_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_192_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_367_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_76_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_76
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_73_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_73_comp_1.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[4]_i_12_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_65_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_85_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_66_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_92_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_88_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_88_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_88_comp.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[27]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_41_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_41_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_380_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_154_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_260_n_0. Replicated 1 times.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_42_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_42_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_93_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_89_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_89_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_89_comp.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_154_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_154_comp.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_43_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_43_comp.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_380_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_380_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_141_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_141_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_141_comp.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_99_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_99_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[19]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_43_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_43_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_100_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_96_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_96_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_96_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_379_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_153_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_153_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_153_comp.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_380_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_380_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/shift[1].  Re-placed instance system_i/caesar_cipher_accele_0/inst/shift_amount_reg[1]
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_142_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_142_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_142_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[30]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[2].  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_2_comp
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_101_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_73_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[4]_i_12_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_65_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_86_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_66_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 25 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[22]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_10_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_10_comp_1
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 23 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 25 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_75_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[31]_i_102_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_71_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[4]_i_12_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_65_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_85_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_66_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_76_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[23]_i_104_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_72_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[19]_i_21_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[19]_i_65_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_86_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[19]_i_66_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_95_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_139_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[19]_i_120_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_102_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_98_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_146_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_146
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/data4__0[4]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[28]_i_12_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[28]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[27]_i_65_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 17 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_3_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[15]_i_101_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]_i_70_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[12]_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[12]_i_12_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_65_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_86_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_66_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_102_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_98_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_146_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_140_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_300_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_297_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_422_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_219_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_215_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[19]_i_296_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_298_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_296_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_421_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_224_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_146_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_140_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_300_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_297_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_225_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[11]_i_256_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_343_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[15]_i_123_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_95_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_120_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_421_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_224_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_441_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_304_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_270_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_270
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_22_n_0_repN_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[28]_i_12_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[27]_i_65_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_86_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[27]_i_66_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_101_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_97_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_145_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[27]_i_140_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_216_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[27]_i_296_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[12]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[15]_i_20_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 24 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_381_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_155_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[20]_i_12_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[19]_i_65_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[11]_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_440_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_303_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_322_n_0.  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_322
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_422_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_225_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 10 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/shift[1]. Optimizations did not improve timing on the net.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Phase 3 Critical Path Optimization | Checksum: 18b697fe5
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:30 . Memory (MB): peak = 2211.996 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[14]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[14]_i_1_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_43_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_101_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_106_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_103_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_73_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[4]_i_12_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_65_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_86_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_66_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_67_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_102_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_98_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_146_n_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_146_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_140_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_207_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_300_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_297_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_292_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_367_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_410_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_441_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_304_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_270_n_0. Replicated 1 times.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_101_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_141_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_140_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_216_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_296_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_297_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_393_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 19 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_378_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_378_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_378_comp.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[22]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_3_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_76_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[23]_i_104_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[23]_i_106_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[23]_i_103_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[23]_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_72_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_72_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_72_comp.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[12]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[12]_i_1_comp.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 17 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[23]_i_73_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[19]_i_21_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[19]_i_65_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_86_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[19]_i_66_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[19]_i_67_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_95_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_95_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_95_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[30]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_4_comp_4.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[1]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[27]_i_4_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_421_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_421_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_421_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[4]_i_12_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_65_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_85_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_66_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_92_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_92_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_92_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_396_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_95_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_120_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_140_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_218_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_214_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_296_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[5]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[29]_i_3_comp.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 26 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_440_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[20]_i_12_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[20]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[19]_i_65_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_85_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[19]_i_66_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_91_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_87_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_87_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[19]_i_87_comp.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_398_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 22 pins.
+INFO: [Physopt 32-663] Processed net system_i/caesar_cipher_accele_0/inst/mod_result[6].  Re-placed instance system_i/caesar_cipher_accele_0/inst/m_axis_tdata[31]_i_3_comp
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_303_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_267_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[4]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_20_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net system_i/caesar_cipher_accele_0/inst/shift[0]. Replicated 1 times.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[14]. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[14]_i_1_comp_2.
+INFO: [Physopt 32-81] Processed net system_i/caesar_cipher_accele_0/inst/shift[0]. Replicated 2 times.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[13]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[13]_i_3_n_0. Critical path length was reduced through logic transformation on cell system_i/caesar_cipher_accele_0/inst/m_axis_tdata[13]_i_3_comp.
+INFO: [Common 17-14] Message 'Physopt 32-710' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/shift[0]_repN_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_101_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[7]_i_73_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[4]_i_12_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_65_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_86_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_66_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_102_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_98_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_146_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_140_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_300_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_297_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_440_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_303_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[3]_i_267_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[4]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata_reg[7]_i_20_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/m_axis_tdata[3]_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/p_11_out[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net system_i/caesar_cipher_accele_0/inst/shift[0]_repN_1. Optimizations did not improve timing on the net.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Phase 4 Critical Path Optimization | Checksum: 18b697fe5
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:40 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2211.996 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-11.390 | TNS=-381.330 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          1.227  |         33.552  |            7  |              0  |                   197  |           0  |           2  |  00:00:39  |
+|  Total          |          1.227  |         33.552  |            7  |              0  |                   197  |           0  |           3  |  00:00:39  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 14f402c18
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:40 . Memory (MB): peak = 2211.996 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+951 Infos, 6 Warnings, 3 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:41 . Memory (MB): peak = 2211.996 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.898 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2211.996 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.990 . Memory (MB): peak = 2211.996 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/nabil/mp1_partd/mp1_partd.runs/impl_1/system_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 47cd8313 ConstDB: 0 ShapeSum: a2ef7759 RouteDB: 15f972f0
+Post Restoration Checksum: NetGraph: eefd2ea2 | NumContArr: 48cbc73b | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2bd1aeb17
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:57 . Memory (MB): peak = 2269.875 ; gain = 57.879
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2bd1aeb17
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:57 . Memory (MB): peak = 2270.117 ; gain = 58.121
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2bd1aeb17
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:57 . Memory (MB): peak = 2270.117 ; gain = 58.121
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1f415b7f1
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:05 . Memory (MB): peak = 2322.207 ; gain = 110.211
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-11.126| TNS=-357.306| WHS=-0.169 | THS=-168.384|
+
+
+Phase 2.4 Soft Constraint Pins - Fast Budgeting
+Phase 2.4 Soft Constraint Pins - Fast Budgeting | Checksum: 282fe12c1
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:01:08 . Memory (MB): peak = 2351.258 ; gain = 139.262
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 11141
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 11141
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 224054045
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:08 . Memory (MB): peak = 2351.258 ; gain = 139.262
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 224054045
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:08 . Memory (MB): peak = 2351.258 ; gain = 139.262
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 1dc6856f7
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:12 . Memory (MB): peak = 2351.258 ; gain = 139.262
+Phase 4 Initial Routing | Checksum: 1dc6856f7
+
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:12 . Memory (MB): peak = 2351.258 ; gain = 139.262
+INFO: [Route 35-580] Design has 1 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++====================+===================+===============================================================================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                                                                                           |
++====================+===================+===============================================================================================================================================+
+| clk_fpga_0         | clk_fpga_0        | system_i/axi_dma_0/U0/GEN_SG_ENGINE.I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_QUEUE/GEN_QUEUE.I_UPDT_DESC_QUEUE/FSM_sequential_pntr_cs_reg[1]/D |
++--------------------+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 3434
+ Number of Nodes with overlaps = 1530
+ Number of Nodes with overlaps = 718
+ Number of Nodes with overlaps = 323
+ Number of Nodes with overlaps = 119
+ Number of Nodes with overlaps = 53
+ Number of Nodes with overlaps = 21
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-13.183| TNS=-664.445| WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 34622be56
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:45 . Memory (MB): peak = 2360.152 ; gain = 148.156
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 1295
+ Number of Nodes with overlaps = 598
+ Number of Nodes with overlaps = 256
+ Number of Nodes with overlaps = 60
+ Number of Nodes with overlaps = 31
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-13.191| TNS=-655.287| WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 1a47fa7da
+
+Time (s): cpu = 00:02:40 ; elapsed = 00:01:58 . Memory (MB): peak = 2360.152 ; gain = 148.156
+Phase 5 Rip-up And Reroute | Checksum: 1a47fa7da
+
+Time (s): cpu = 00:02:40 ; elapsed = 00:01:58 . Memory (MB): peak = 2360.152 ; gain = 148.156
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1da50f356
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:58 . Memory (MB): peak = 2360.152 ; gain = 148.156
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-13.107| TNS=-640.634| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 6.1 Delay CleanUp | Checksum: 2bfeb11d0
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:59 . Memory (MB): peak = 2360.152 ; gain = 148.156
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 2bfeb11d0
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:59 . Memory (MB): peak = 2360.152 ; gain = 148.156
+Phase 6 Delay and Skew Optimization | Checksum: 2bfeb11d0
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:59 . Memory (MB): peak = 2360.152 ; gain = 148.156
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-13.082| TNS=-527.203| WHS=0.020  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 32bbb72c4
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:59 . Memory (MB): peak = 2360.152 ; gain = 148.156
+Phase 7 Post Hold Fix | Checksum: 32bbb72c4
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:59 . Memory (MB): peak = 2360.152 ; gain = 148.156
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.21736 %
+  Global Horizontal Routing Utilization  = 3.08663 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 50.4505%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 72.0721%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 69.1176%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 82.3529%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 32bbb72c4
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:59 . Memory (MB): peak = 2360.152 ; gain = 148.156
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 32bbb72c4
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:59 . Memory (MB): peak = 2360.152 ; gain = 148.156
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 3349dadb2
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:02:00 . Memory (MB): peak = 2360.152 ; gain = 148.156
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 3349dadb2
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:02:00 . Memory (MB): peak = 2360.152 ; gain = 148.156
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-13.082| TNS=-527.203| WHS=0.020  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 12 Post Router Timing | Checksum: 3349dadb2
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:02:00 . Memory (MB): peak = 2360.152 ; gain = 148.156
+Total Elapsed time in route_design: 120.296 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 12cc7086c
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:02:00 . Memory (MB): peak = 2360.152 ; gain = 148.156
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 12cc7086c
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:02:01 . Memory (MB): peak = 2360.152 ; gain = 148.156
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+967 Infos, 7 Warnings, 3 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:46 ; elapsed = 00:02:01 . Memory (MB): peak = 2360.152 ; gain = 148.156
+INFO: [Vivado 12-24828] Executing command : report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+Command: report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/nabil/mp1_partd/mp1_partd.runs/impl_1/system_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/nabil/mp1_partd/mp1_partd.runs/impl_1/system_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_drc: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2404.871 ; gain = 39.973
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file system_wrapper_timing_summary_routed.rpt -pb system_wrapper_timing_summary_routed.pb -rpx system_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file system_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file system_wrapper_route_status.rpt -pb system_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+Command: report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+984 Infos, 8 Warnings, 4 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file system_wrapper_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file system_wrapper_bus_skew_routed.rpt -pb system_wrapper_bus_skew_routed.pb -rpx system_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 2420.387 ; gain = 60.234
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2447.234 ; gain = 8.973
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.880 . Memory (MB): peak = 2458.824 ; gain = 20.516
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2458.824 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 2458.824 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2458.824 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2458.824 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2458.824 ; gain = 20.516
+INFO: [Common 17-1381] The checkpoint 'C:/Users/nabil/mp1_partd/mp1_partd.runs/impl_1/system_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2458.824 ; gain = 38.438
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 13 14:22:28 2025...

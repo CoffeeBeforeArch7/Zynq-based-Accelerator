@@ -1,0 +1,405 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Sep  5 13:59:37 2025
+# Process ID         : 1756
+# Current directory  : C:/Users/qyliu/mp1_partd/mp1_partd.runs/system_caesar_cipher_accele_0_0_synth_1
+# Command line       : vivado.exe -log system_caesar_cipher_accele_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_caesar_cipher_accele_0_0.tcl
+# Log file           : C:/Users/qyliu/mp1_partd/mp1_partd.runs/system_caesar_cipher_accele_0_0_synth_1/system_caesar_cipher_accele_0_0.vds
+# Journal file       : C:/Users/qyliu/mp1_partd/mp1_partd.runs/system_caesar_cipher_accele_0_0_synth_1\vivado.jou
+# Running On         : JamesLiu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i7-14650HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 34053 MB
+# Swap memory        : 9663 MB
+# Total Virtual      : 43717 MB
+# Available Virtual  : 16868 MB
+#-----------------------------------------------------------
+source system_caesar_cipher_accele_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 500.391 ; gain = 214.438
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/qyliu/AppData/Roaming/Xilinx/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/2025.1/Vivado/data/ip'.
+Command: synth_design -top system_caesar_cipher_accele_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24828
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1266.957 ; gain = 492.887
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_mem_intercon_imp_xbar_0/synth/system_axi_mem_intercon_imp_xbar_0.v:152]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_mem_intercon_imp_xbar_0/synth/system_axi_mem_intercon_imp_xbar_0.v:154]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_mem_intercon_imp_xbar_0/synth/system_axi_mem_intercon_imp_xbar_0.v:155]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_mem_intercon_imp_xbar_0/synth/system_axi_mem_intercon_imp_xbar_0.v:157]
+INFO: [Synth 8-6157] synthesizing module 'system_caesar_cipher_accele_0_0' [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/synth/system_caesar_cipher_accele_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'caesar_cipher_accelerator' [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ipshared/d2b5/src/accelerator.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ipshared/d2b5/src/accelerator.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'caesar_cipher_accelerator' (0#1) [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ipshared/d2b5/src/accelerator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'system_caesar_cipher_accele_0_0' (0#1) [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/synth/system_caesar_cipher_accele_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element char_out0_reg was removed.  [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ipshared/d2b5/src/accelerator.v:197]
+WARNING: [Synth 8-6014] Unused sequential element char_out1_reg was removed.  [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ipshared/d2b5/src/accelerator.v:198]
+WARNING: [Synth 8-6014] Unused sequential element char_out2_reg was removed.  [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ipshared/d2b5/src/accelerator.v:199]
+WARNING: [Synth 8-6014] Unused sequential element char_out3_reg was removed.  [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ipshared/d2b5/src/accelerator.v:200]
+WARNING: [Synth 8-7129] Port s_axil_awaddr[31] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[30] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[29] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[28] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[27] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[26] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[25] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[24] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[23] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[22] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[21] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[20] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[19] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[18] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[17] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[16] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[15] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[14] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[13] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[12] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[11] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[10] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[9] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[8] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[7] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[6] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[5] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[4] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[31] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[30] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[29] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[28] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[27] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[26] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[25] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[24] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[23] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[22] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[21] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[20] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[19] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[18] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[17] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[16] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[15] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[14] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[13] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[12] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[11] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[10] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[9] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[8] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[7] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[6] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[5] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[4] in module caesar_cipher_accelerator is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1573.559 ; gain = 799.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1573.559 ; gain = 799.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1573.559 ; gain = 799.488
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1573.559 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_s00a2s_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_s00a2s_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_sarn_0_ooc.xdc] for cell 'inst'
+WARNING: [Vivado 12-584] No ports matched 's_sc_aclk'. [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_sarn_0_ooc.xdc:50]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports s_sc_aclk]'. [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_sarn_0_ooc.xdc:50]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_sarn_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_srn_0_ooc.xdc] for cell 'inst'
+WARNING: [Vivado 12-584] No ports matched 's_sc_aclk'. [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_srn_0_ooc.xdc:50]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports s_sc_aclk]'. [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_srn_0_ooc.xdc:50]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_srn_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_sawn_0_ooc.xdc] for cell 'inst'
+WARNING: [Vivado 12-584] No ports matched 's_sc_aclk'. [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_sawn_0_ooc.xdc:50]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports s_sc_aclk]'. [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_sawn_0_ooc.xdc:50]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_sawn_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_swn_0_ooc.xdc] for cell 'inst'
+WARNING: [Vivado 12-584] No ports matched 's_sc_aclk'. [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_swn_0_ooc.xdc:50]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports s_sc_aclk]'. [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_swn_0_ooc.xdc:50]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_swn_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_sbn_0_ooc.xdc] for cell 'inst'
+WARNING: [Vivado 12-584] No ports matched 's_sc_aclk'. [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_sbn_0_ooc.xdc:50]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports s_sc_aclk]'. [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_sbn_0_ooc.xdc:50]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_sbn_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_m00s2a_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/bd_44e3_m00s2a_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/ooc.xdc] for cell 'inst'
+WARNING: [Vivado 12-584] No ports matched 'aclk'. [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/ooc.xdc:3]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports aclk]'. [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/ooc.xdc:3]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/ooc.xdc] for cell 'inst'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'system_axi_dma_0_0'. The XDC file c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_dma_0_0/system_axi_dma_0_0.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'system_processing_system7_0_0'. The XDC file c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_processing_system7_0_0/system_processing_system7_0_0.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'system_rst_ps7_0_100M_0'. The XDC file c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc will not be read for any cell of this module.
+Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/smartconnect.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/smartconnect.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/qyliu/mp1_partd/mp1_partd.runs/system_caesar_cipher_accele_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/qyliu/mp1_partd/mp1_partd.runs/system_caesar_cipher_accele_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/qyliu/mp1_partd/mp1_partd.runs/system_caesar_cipher_accele_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_caesar_cipher_accele_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_caesar_cipher_accele_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'system_axi_dma_0_0'. The XDC file c:/Users/qyliu/mp1_partd/mp1_partd.gen/sources_1/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_axi_dma_0_0/system_axi_dma_0_0_clocks.xdc will not be read for any cell of this module.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1637.641 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1637.844 ; gain = 0.203
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1637.844 ; gain = 863.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1637.844 ; gain = 863.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1637.844 ; gain = 863.773
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'write_state_reg' in module 'caesar_cipher_accelerator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                   WRITE |                              010 |                               01
+                    RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'write_state_reg' using encoding 'one-hot' in module 'caesar_cipher_accelerator'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1637.844 ; gain = 863.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 4     
+	   2 Input   32 Bit       Adders := 12    
+	   2 Input    8 Bit       Adders := 28    
++---Registers : 
+	               32 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s_axil_awaddr[31] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[30] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[29] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[28] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[27] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[26] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[25] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[24] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[23] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[22] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[21] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[20] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[19] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[18] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[17] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[16] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[15] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[14] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[13] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[12] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[11] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[10] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[9] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[8] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[7] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[6] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[5] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_awaddr[4] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[31] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[30] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[29] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[28] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[27] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[26] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[25] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[24] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[23] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[22] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[21] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[20] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[19] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[18] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[17] in module caesar_cipher_accelerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axil_araddr[16] in module caesar_cipher_accelerator is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1637.844 ; gain = 863.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 1637.844 ; gain = 863.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 1637.844 ; gain = 863.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1744.180 ; gain = 970.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1866.770 ; gain = 1092.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1866.770 ; gain = 1092.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1866.770 ; gain = 1092.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1866.770 ; gain = 1092.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1866.770 ; gain = 1092.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1866.770 ; gain = 1092.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   352|
+|2     |LUT1   |   161|
+|3     |LUT2   |   616|
+|4     |LUT3   |   391|
+|5     |LUT4   |   150|
+|6     |LUT5   |   229|
+|7     |LUT6   |   856|
+|8     |FDRE   |   104|
+|9     |FDSE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1866.770 ; gain = 1092.699
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 57 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:43 . Memory (MB): peak = 1866.770 ; gain = 1028.414
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1866.770 ; gain = 1092.699
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1875.902 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 352 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'system_caesar_cipher_accele_0_0' is not ideal for floorplanning, since the cellview 'caesar_cipher_accelerator' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1879.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 435d05ff
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 116 Warnings, 10 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:53 . Memory (MB): peak = 1879.586 ; gain = 1350.910
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1879.586 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/qyliu/mp1_partd/mp1_partd.runs/system_caesar_cipher_accele_0_0_synth_1/system_caesar_cipher_accele_0_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1879.586 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/qyliu/mp1_partd/mp1_partd.runs/system_caesar_cipher_accele_0_0_synth_1/system_caesar_cipher_accele_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file system_caesar_cipher_accele_0_0_utilization_synth.rpt -pb system_caesar_cipher_accele_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  5 14:00:45 2025...

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Sep  8 18:59:10 2025
+# Process ID         : 25380
+# Current directory  : C:/Users/nabil/mp1_b/mp1_b.runs/impl_1
+# Command line       : vivado.exe -log switch_led_modes.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source switch_led_modes.tcl -notrace
+# Log file           : C:/Users/nabil/mp1_b/mp1_b.runs/impl_1/switch_led_modes.vdi
+# Journal file       : C:/Users/nabil/mp1_b/mp1_b.runs/impl_1\vivado.jou
+# Running On         : Nabila_Tasnim
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16869 MB
+# Swap memory        : 34806 MB
+# Total Virtual      : 51675 MB
+# Available Virtual  : 2889 MB
+#-----------------------------------------------------------
+source switch_led_modes.tcl -notrace

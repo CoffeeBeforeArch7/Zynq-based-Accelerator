@@ -1,0 +1,28 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L axi_datamover_v5_1_37 -L axi_sg_v4_1_21 -L axi_dma_v7_1_36 -L xlconstant_v1_1_10 -L proc_sys_reset_v5_0_17 -L smartconnect_v1_0 -L axi_register_slice_v2_1_35 -L generic_baseblocks_v2_1_2 -L fifo_generator_v13_2_13 -L axi_data_fifo_v2_1_35 -L axi_crossbar_v2_1_37 -L axi_protocol_converter_v2_1_36 -L axi_clock_converter_v2_1_34 -L blk_mem_gen_v8_4_11 -L axi_dwidth_converter_v2_1_36 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot system_wrapper_behav xil_defaultlib.system_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_wvalid' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1499]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_wready' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1498]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_wdata' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1497]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_rvalid' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1496]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_rresp' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1495]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_rready' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1494]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_rdata' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1493]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_bvalid' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1492]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_bresp' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1491]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_bready' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1490]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_awvalid' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1489]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_awready' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1488]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_awaddr' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1487]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_arvalid' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1486]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_arready' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1485]
+ERROR: [VRFC 10-3180] cannot find port 'M01_AXI_araddr' on this module [C:/Users/nabil/mp1_partd/mp1_partd.ip_user_files/bd/system/sim/system.v:1484]
+ERROR: [VRFC 10-8530] module 'processing_system7_vip_v1_0_23(C_FCLK_CLK0_FREQ=100.0,C_FCLK_CLK1_FREQ=10.0,C_FCLK_CLK3_FREQ=10.0,C_FCLK_CLK2_FREQ=10.0,C_USE_S_AXI_HP0=1,C_S_AXI_HP0_DATA_WIDTH=64,C_S_AXI_HP1_DATA_WIDTH=64,C_S_AXI_HP2_DATA_WIDTH=64,C_S_AXI_HP3_DATA_WIDTH=64,C_USE_M_AXI_GP0=1,C_USE_S_AXI_GP0=0,C_USE_S_AXI_GP1=0,C_USE_S_AXI_ACP=0)' is ignored due to previous errors [C:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ipshared/6cfa/hdl/processing_system7_vip_v1_0_vl_rfs.sv:11859]
+ERROR: [VRFC 10-8530] module 'axi_crossbar_v2_1_37_axi_crossbar(C_FAMILY="zynq",C_NUM_SLAVE_SLOTS=3,C_NUM_MASTER_SLOTS=1,C_AXI_ID_WIDTH=2,C_AXI_DATA_WIDTH=64,C_AXI_PROTOCOL=1,C_M_AXI_BASE_ADDR=64'b0,C_M_AXI_ADDR_WIDTH=32'b011101,C_S_AXI_BASE_ID=96'b0100000000000000000000000000000000100000000000000000000000000000000,C_S_AXI_THREAD_ID_WIDTH=96'b0,C_M_AXI_WRITE_CONNECTIVITY=32'b0110,C_M_AXI_READ_CONNECTIVITY=32'b0101,C_S_AXI_SINGLE_THREAD=96'b0,C_S_AXI_WRITE_ACCEPTANCE=96'b0100000000000000000000000000001000000000000000000000000000000000010,C_S_AXI_READ_ACCEPTANCE=96'b0100000000000000000000000000000001000000000000000000000000000010000,C_M_AXI_WRITE_ISSUING=32'b01000,C_M_AXI_READ_ISSUING=32'b01000,C_S_AXI_ARB_PRIORITY=96'b0)' is ignored due to previous errors [C:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
+ERROR: [VRFC 10-8530] module 'processing_system7_vip_v1_0_23_gen_clock(freq_clk3=10.0,freq_clk2=10.0,freq_clk1=10.0,freq_clk0=100.0)' is ignored due to previous errors [C:/Users/nabil/mp1_partd/mp1_partd.gen/sources_1/bd/system/ipshared/6cfa/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4874]
+INFO: [VRFC 10-10021] Sorry, too many errors..
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

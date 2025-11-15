@@ -1,0 +1,28 @@
+# compile vhdl design source files
+vhdl axi_datamover_v5_1_37  \
+"../../../../mp1_partd.gen/sources_1/bd/system/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd" \
+
+vhdl axi_sg_v4_1_21  \
+"../../../../mp1_partd.gen/sources_1/bd/system/ipshared/b193/hdl/axi_sg_v4_1_rfs.vhd" \
+
+vhdl axi_dma_v7_1_36  \
+"../../../../mp1_partd.gen/sources_1/bd/system/ipshared/cb19/hdl/axi_dma_v7_1_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../mp1_partd.ip_user_files/bd/system/ip/system_axi_dma_0_0/sim/system_axi_dma_0_0.vhd" \
+
+vhdl proc_sys_reset_v5_0_17  \
+"../../../../mp1_partd.gen/sources_1/bd/system/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../mp1_partd.ip_user_files/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/sim/bd_44e3_psr_aclk_0.vhd" \
+"../../../../mp1_partd.ip_user_files/bd/system/ip/system_rst_ps7_0_100M_0/sim/system_rst_ps7_0_100M_0.vhd" \
+
+vhdl fifo_generator_v13_2_13  \
+"../../../../mp1_partd.gen/sources_1/bd/system/ipshared/dc46/hdl/fifo_generator_v13_2_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../mp1_partd.ip_user_files/bd/system/ip/system_caesar_cipher_accele_0_0/src/system_rst_ps7_0_100M_0/sim/system_rst_ps7_0_100M_0.vhd" \
+
+# Do not sort compile order
+nosort
